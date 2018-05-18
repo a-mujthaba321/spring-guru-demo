@@ -22,16 +22,17 @@ public class Publisher {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    
+
     private String name;
-    
+
     private String addressLine1;
+
+    public Publisher() {
+    }
 
     public Publisher(String name, String addressLine1) {
         this.name = name;
         this.addressLine1 = addressLine1;
     }
-    
-    
 
 }
